@@ -13,9 +13,17 @@ module.exports = env => ({
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: [{ loader: 'babel-loader?cacheDirectory' }],
+        use: [
+          { loader: 'babel-loader?cacheDirectory' },
+          {
+            loader: 'eslint-loader',
+            options: {
+              emitError: true,
+              emitWarning: true,
+            },
+          },
+        ],
       },
-      { loader: 'eslint-loader' },
     ],
   },
 });
