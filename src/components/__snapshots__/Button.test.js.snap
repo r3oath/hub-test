@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`button renders as vanilla 1`] = `
+<button
+  className="sc-bdVaJa glVVpA"
+/>
+`;
+
+exports[`button renders with primary modifier 1`] = `
+<button
+  className="sc-bdVaJa jquwGS"
+/>
+`;
