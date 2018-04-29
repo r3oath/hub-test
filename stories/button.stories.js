@@ -3,5 +3,5 @@ import { storiesOf } from '@storybook/react';
 import Button from '../src/components/Button';
 
 storiesOf('Button', module)
-  .add('vanilla', () => <Button>Hello World!</Button>)
-  .add('primary', () => <Button modifiers={{ primary: true }}>Hello World!</Button>);
+  .add('vanilla', () => <Button>View terms</Button>)
+  .add('primary', () => <Button modifiers={{ primary: true }}>Create new item</Button>);

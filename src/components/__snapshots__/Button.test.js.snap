@@ -1,13 +1,72 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`button renders as vanilla 1`] = `
+.c0 {
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding: 0.8rem 1rem;
+  border-radius: 100rem;
+  font-weight: bold;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border: 1px solid rgb(180,180,180);
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: -webkit-transform 80ms,border-color 80ms,box-shadow 80ms,background-color 80ms;
+  -webkit-transition: transform 80ms,border-color 80ms,box-shadow 80ms,background-color 80ms;
+  transition: transform 80ms,border-color 80ms,box-shadow 80ms,background-color 80ms;
+}
+
+.c0:hover {
+  -webkit-transform: translate3d(0,-1px,0);
+  -ms-transform: translate3d(0,-1px,0);
+  transform: translate3d(0,-1px,0);
+  border: 1px solid rgb(150,150,150);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
 <button
-  className="sc-bdVaJa glVVpA"
+  className="c0"
 />
 `;
 
 exports[`button renders with primary modifier 1`] = `
+.c0 {
+  cursor: pointer;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  padding: 0.8rem 1rem;
+  border-radius: 100rem;
+  font-weight: bold;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border: 1px solid rgb(180,180,180);
+  -webkit-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+  -webkit-transition: -webkit-transform 80ms,border-color 80ms,box-shadow 80ms,background-color 80ms;
+  -webkit-transition: transform 80ms,border-color 80ms,box-shadow 80ms,background-color 80ms;
+  transition: transform 80ms,border-color 80ms,box-shadow 80ms,background-color 80ms;
+  background-color: #ffc107;
+  border-color: #a07800;
+}
+
+.c0:hover {
+  -webkit-transform: translate3d(0,-1px,0);
+  -ms-transform: translate3d(0,-1px,0);
+  transform: translate3d(0,-1px,0);
+  border: 1px solid rgb(150,150,150);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.c0:hover {
+  background-color: #ffc721;
+  border-color: #866500;
+}
+
 <button
-  className="sc-bdVaJa jquwGS"
+  className="c0"
 />
 `;
