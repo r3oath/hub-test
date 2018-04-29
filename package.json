@@ -56,6 +56,6 @@
     "test": "jest",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "start": "webpack-dev-server --open --hot"
+    "start": "webpack-dev-server --open --hotOnly"
   }
 }
