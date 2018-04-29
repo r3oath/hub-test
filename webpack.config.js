@@ -1,11 +1,12 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = env => ({
   mode: env && env.prod ? 'production' : 'development',
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'public'),
-    filename: 'bundle.js',
+    filename: 'bundle.[name].[chunkhash].js',
   },
   devtool: env && env.prod ? 'source-map' : 'eval',
   module: {
@@ -26,4 +27,9 @@ module.exports = env => ({
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'src/index.html',
+    }),
+  ],
 });
