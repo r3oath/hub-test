@@ -6,7 +6,14 @@ module.exports = env => ({
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'public'),
-    filename: 'bundle.[name].[chunkhash].js',
+    filename: 'bundle.[name].[hash].js',
+  },
+  devServer: {
+    contentBase: path.join(__dirname, 'public'),
+    compress: true,
+    port: 9000,
+    historyApiFallback: true,
+    hot: true,
   },
   devtool: env && env.prod ? 'source-map' : 'eval',
   module: {
