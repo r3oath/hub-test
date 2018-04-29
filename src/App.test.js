@@ -1,10 +1,10 @@
 import * as React from 'react';
-import renderer from 'react-test-renderer';
+import * as ReactDOM from 'react-dom';
 import App from './App';
 
-test('works without crashing', () => {
-  const component = renderer.create(<App />);
-  const tree = component.toJSON();
+test('app does not crash', () => {
+  const el = document.createElement('div');
 
-  expect(tree).toMatchSnapshot();
+  ReactDOM.render(<App />, el);
+  ReactDOM.unmountComponentAtNode(el);
 });
