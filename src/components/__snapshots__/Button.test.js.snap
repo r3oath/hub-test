@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`button renders as vanilla 1`] = `
+exports[`Button should render in a vanilla state 1`] = `
 .c0 {
   cursor: pointer;
   font-size: 0.8rem;
@@ -32,7 +32,7 @@ exports[`button renders as vanilla 1`] = `
 />
 `;
 
-exports[`button renders with primary modifier 1`] = `
+exports[`Button should render with the primary modifier 1`] = `
 .c0 {
   cursor: pointer;
   font-size: 0.8rem;
